@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapid Rides</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rapid Rides</h1>
+    </header>
+    
+    <div id="app">
+        <!-- Login Form -->
+        <div class="form-container" id="login-form">
+            <h2>Login</h2>
+            <form onsubmit="login(event)">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="#" onclick="showRegistration()">Register</a></p>
+            </form>
+        </div>
+
+        <!-- Registration Form -->
+        <div class="form-container" id="register-form" style="display: none;">
+            <h2>Register</h2>
+            <form onsubmit="register(event)">
+                <input type="text" id="reg-username" placeholder="Username" required>
+                <input type="password" id="reg-password" placeholder="Password" required>
+                <button type="submit">Register</button>
+                <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+            </form>
+        </div>
+        
+
+        <!-- Dashboard -->
+    
+        <div id="dashboard" style="display: none;">
+        
+                <p class="greeting">Good morning, <span id="user-name"></span></p>
+                <p class="subheading">Where to today?</p>
+
+                <div class="location-input">
+                    <input type="text" placeholder="Enter pickup location">
+                    <span class="location-icon">📍</span>
+                </div>
+
+                <div class="location-input">
+                    <input type="text" placeholder="Enter dropoff location">
+                    <span class="location-icon">📍</span>
+                </div>
+
+                <button class="search-btn" onclick="showTransportOptions()">Search</button>
+            </div>
+        </div> 
+        
+
+        <!-- Transport Selection -->
+        <div id="transport-selection" style="display: none;">
+            <h2>Select a Ride</h2>
+            <div class="ride-option" onclick="selectRide('Bike', 40)">
+                <img id="pic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0udLQa0YSRm9NVZiEqx-78z6wKnNUgfCLDaDXu1kN0BgAOGYfYL0-FOvfAtOzwG-QFEs&usqp=CAU" alt="Bike">
+                <span>Bike</span>
+                <p>₹40</p>
+            </div>
+            <div class="ride-option" onclick="selectRide('Auto', 50)">
+                <img id="pic" src="https://i.pinimg.com/736x/87/bb/bf/87bbbf191634958b97277c51571507fe.jpg" alt="Auto">
+                <span>Auto</span>
+                <p>₹50</p>
+            </div>
+            <div class="ride-option" onclick="selectRide('Car', 90)">
+                <img id="pic" src="https://media.istockphoto.com/id/1144268897/video/cartoon-isolated-blue-car-flat-animation-side-view.jpg?s=640x640&k=20&c=5e_rEB0060U0_EbumzDIWBklrwEn2uk4A1CdghCuqxg=" alt="Car">
+                <span>Car</span>
+                <p>₹90</p>
+            </div>
+            <div class="ride-option" onclick="selectRide('Premium', 150)">
+                <img id="pic" src="https://cdn-icons-png.flaticon.com/512/14/14165.png" alt="Premium">
+                <span>Premium</span>
+                <p>₹150</p>
+            </div>
+            <button id="book-btn" style="display: none;" onclick="bookRide()">Book Now</button>
+        </div>
+
+        <!-- Live Tracking -->
+        <div id="live-tracking" style="display: none;">
+            <h2>Live Tracking</h2>
+            <p>Distance to pickup: <span id="distance"></span> km</p>
+            <button onclick="endRide()">End Ride</button>
+        </div>
+
+        <!-- Review and Report Form -->
+        <div id="review-form" style="display: none;">
+            <h2>Rate Your Ride</h2>
+            <p>How was your experience with the driver?</p>
+            <div class="rating">
+                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+            </div>
+            <h3>Report an Issue (Optional)</h3>
+            <form onsubmit="submitReport(event)">
+                <label><input type="checkbox" id="no-safety"> No safety measures</label><br>
+                <label><input type="checkbox" id="reckless-driving"> Reckless driving</label><br>
+                <label><input type="checkbox" id="bad-behavior"> Bad driver behavior</label><br>
+                <label><input type="checkbox" id="high-prices"> High prices</label><br>
+                <textarea id="user-comment" placeholder="Tell us your experience..." rows="4"></textarea><br>
+                <button type="submit">Send Report</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

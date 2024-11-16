@@ -1,0 +1,429 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f9;
+    height: 100vh;
+    
+}
+#pic{
+    width: 100px;
+    height: 100px;
+}
+h2{
+    font-size: 40px;
+}
+ 
+header {
+    width: 100%;
+    background-color: #007BFF;
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+   
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin: 0;
+
+}
+
+    
+
+
+.form-container {
+    padding-right: 400px;
+    padding-left: 800px;
+    padding-top: 10px;
+    padding-bottom: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+    background-image: url(pic.jpg);
+    background-size: 600px;
+    background-repeat: no-repeat;
+
+    
+}
+
+
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Dashboard Styling */
+#greeting {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#dashboard {
+    
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/265/733/small/location-pins-in-a-foldable-map.jpg);
+    background-size: 400px;
+    background-position: right;
+    text-align: center;
+    padding: 200px;
+    padding-left: 500px;
+    padding-right: 500px;
+    padding-top: 100px;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.greeting {
+    font-size: 40px;
+    font-weight: bold;
+    background-color: #333;
+    color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+
+}
+
+.subheading {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.location-input {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.location-input input {
+    width: 100%;
+    padding: 12px;
+    padding-right: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.location-icon {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    font-size: 18px;
+    color: #007BFF;
+}
+
+.search-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.search-btn:hover {
+    background-color: #0056b3;
+}
+
+.options {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.options p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.options .arrow {
+    font-size: 18px;
+    color: #888;
+}
+
+#dashboard button {
+    background-color: #FF4D4D;
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+}
+
+#dashboard button:hover {
+    background-color: #b32424;
+}
+/* Ride Options */
+#transport-selection {
+    text-align: center;
+    padding: 20px;
+}
+
+.ride-option {
+    padding: 15px;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.ride-option:hover {
+    background-color: #ddd;
+}
+
+#book-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#book-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Live Tracking */
+#live-tracking {
+    text-align: center;
+   
+    
+}
+
+#live-tracking p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+/* Ride Options */
+#transport-selection {
+    text-align: center;
+    padding: 20px;
+}
+
+.ride-option {
+    padding: 15px;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.ride-option:hover {
+    background-color: #ddd;
+}
+
+#book-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#book-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Live Tracking */
+#live-tracking {
+    text-align: center;
+    padding: 200px;
+    background-image: url(https://tracking.globemoving.net/assets/website/assets/images/track.jpg);
+    
+}
+
+#live-tracking p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+/* Ride Options */
+#transport-selection {
+    text-align: center;
+    padding: 20px;
+}
+
+.ride-option {
+    padding: 15px;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.ride-option:hover {
+    background-color: #ddd;
+}
+
+#book-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#book-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Live Tracking */
+
+
+#live-tracking p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+/* Ride Options */
+#transport-selection {
+    text-align: center;
+    padding: 20px;
+}
+
+.ride-option {
+    padding: 15px;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.ride-option:hover {
+    background-color: #ddd;
+}
+
+#book-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#book-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Live Tracking */
+
+
+
+/* Review and Report Form Styles */
+#review-form {
+    background-color: white;
+    padding: 20px;
+    padding-right: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+.rating span {
+    font-size: 30px;
+    cursor: pointer;
+    color: #ffd700;
+}
+
+.rating span:hover {
+    color: #ffcc00;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Styling checkboxes */
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+
+
